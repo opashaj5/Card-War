@@ -1,0 +1,175 @@
+*, *::after, *::before { 
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://tinyurl.com/ya3dazyf') no-repeat center center fixed;
+    background-size: cover;
+    background-color: green;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    user-select: none;
+}
+
+h2 {
+    position: absolute;
+    top: 100px;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-color: green;
+    border: 10px solid black;
+    border-radius: 25px;
+    opacity: 0.7;
+}
+
+.computer,
+.player {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: 2rem 10rem;
+    gap: .5rem;
+}
+
+.deck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: black;
+    user-select: none;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 150px;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background-color: white;
+    user-select: none;
+}
+  
+.comp-deck,
+.player-deck {
+    background-image: linear-gradient(to bottom right, red, white, red);
+}
+  
+.message {
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    user-select: none;
+}
+
+.card.red {
+    color: red;
+}
+  
+.card.black {
+    color: black;
+}
+  
+.card::before,
+.card::after {
+    position: absolute;
+    content: attr(data-value);
+    font-size: 1rem;
+}
+  
+.card::before {
+    top: .5rem;
+    left: .5rem
+}
+  
+.card::after {
+    bottom: .5rem;
+    right: .5rem;
+    transform: rotate(180deg);
+}
+
+.buttons {
+    position: absolute;
+    bottom: 25%;
+    left: 45%;
+    user-select: none;
+}
+
+.button {
+    border: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: black;
+    user-select: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 15px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 25px;
+    width: 40%;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    user-select: none;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
