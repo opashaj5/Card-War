@@ -12,8 +12,8 @@ The game of War is a fun and simple card game. It's player vs. the computer. The
 
 ## Wireframe
 
-<img src="https://imgur.com/Yhps8Xk">
-<img src="https://imgur.com/eLzXcQu">
+<img src="https://i.imgur.com/Yhps8Xk.png">
+<img src="https://i.imgur.com/eLzXcQu.png">
 
 ## Challenges
 
