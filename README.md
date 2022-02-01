@@ -24,7 +24,6 @@ The CSS portion was the most challenging in this project. I had a vision of what
 ### Sources
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
-
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get
 
 ### Credit
