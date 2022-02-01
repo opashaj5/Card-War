@@ -28,11 +28,11 @@ const message = document.querySelector(".message")
 let playerDeck, compDeck, inGame, stop
 
 // Function to run game at on click
-document.addEventListener("click", () => {
+document.querySelector('.container').addEventListener("click", () => {
   if (stop) {
     startGame()
     return
-  }
+}
 
 // Flips cards during game and resets cards
   if (inGame) {
@@ -47,6 +47,12 @@ startGame()
 function startGame() {
   const deck = new Deck()
   deck.shuffle()
+
+// Restart Game
+const resetElement = document.getElementById('reset')
+resetElement.addEventListener('click', (e) => {
+  location.reload();
+})
 
 // Divides deck in half between two players
   const cutDeck = Math.ceil(deck.numOfCards / 2)
